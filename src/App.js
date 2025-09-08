@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Home from "./components/Home";
+import Members from "./components/Members";
+import Community from "./components/Community";
 import Price from "./components/Price";
 import "./components/Login";
 import Footer from "./components/Footer";
@@ -15,6 +17,8 @@ function App() {
       <Navbar />
       <Home />
       <Diet_plans />
+      <Community />
+      <Members />
       <Price />
       <Login />
       <Footer />

@@ -114,7 +114,7 @@ const Diet_plans = () => {
           </div>
         </div>
 
-        <button className="right">right</button>
+        {/* <button className="right">right</button> */}
       </div>
 
       {/* <div className="plan-types">

@@ -1,0 +1,25 @@
+.primary{
+    height: 100px;
+    width: 100px;
+    background-color: #4caf50;
+}
+.secondary{
+    height: 100px;
+    width: 100px;
+    background-color: #ff9800;
+}
+.accent{
+    height: 100px;
+    width: 100px;
+    background-color: #03a9f4;
+}
+.Light{
+    height: 100px;
+    width: 100px;
+    background-color: #fafafa;
+}
+.Dark{
+    height: 100px;
+    width: 100px;
+    background-color: #212122;
+}
