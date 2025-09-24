@@ -15,14 +15,37 @@ const Login = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (form.password !== form.confirmPassword) {
       alert("Password isn't matching");
       return;
     }
-    // Submit logic here (e.g., API call)
-    alert("Login successful!");
+
+    try {
+      const response = await fetch("http://localhost:5000/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          password: form.password,
+          confirmPassword: form.confirmPassword,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Unknown error");
+      }
+
+      alert(data.message);
+    } catch (error) {
+      console.error("❌ Error:", error);
+      alert(`Failed: ${error.message}`);
+    }
   };
 
   return (

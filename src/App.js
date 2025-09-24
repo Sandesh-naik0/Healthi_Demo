@@ -18,7 +18,6 @@ function App() {
       <Home />
       <Diet_plans />
       <Community />
-      <Members />
       <Price />
       <Login />
       <Footer />

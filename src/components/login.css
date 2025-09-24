@@ -44,7 +44,8 @@
     border: 1.5px solid #bfc9d9;
     border-radius: 8px;
     font-size: 1rem;
-    transition: border 0.2s, box-shadow 0.2s;
+    transition: border 0.2s, box-sh
+    adow 0.2s;
     outline: none;
     background: #f8fafc;
 }
@@ -73,12 +74,12 @@
     background: linear-gradient(90deg, #38b6ff 0%, #4f8cff 100%);
     transform: translateY(-2px) scale(1.03);
 }
-
-@media screen {
+/* 
+@media (max){
     .login-form {
         margin: 0 30px;
         padding: 2rem 1.5rem;
         min-width: 280px;
         max-width: 100%;
     }
-}
+} */
